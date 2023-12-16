@@ -7,8 +7,8 @@ package Grpc.PHPdhtQbittorrentService.Hello;
 
 // 同时我们可以看到传参为HelloRequest，HelloRequest属于消息
 // 返回消息为HelloReply
-service Hi {
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+service Hello {
+  rpc sayHello (HelloRequest) returns (HelloReply) {}
 }
 
 // 对于消息的定义

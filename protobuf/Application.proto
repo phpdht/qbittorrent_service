@@ -1,0 +1,15 @@
+syntax = "proto3";  // 标识，必须要有，表示是在使用proto3的协议
+
+package Grpc.PHPdhtQbittorrentService.Application;
+
+import "Common.proto";
+
+service Application {
+  rpc version (Common.Parameters) returns (VersionReply) {}
+
+}
+
+message VersionReply{
+  string version = 1;
+}
+
