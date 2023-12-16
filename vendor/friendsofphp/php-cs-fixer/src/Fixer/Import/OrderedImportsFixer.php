@@ -289,7 +289,7 @@ use Bar;
         $secondNamespace = str_replace('\\', ' ', $this->prepareNamespace($second['namespace']));
 
         return true === $this->configuration['case_sensitive']
-            ? strcmp($firstNamespace, $secondNamespace)
+            ? $firstNamespace <=> $secondNamespace
             : strcasecmp($firstNamespace, $secondNamespace);
     }
 
@@ -311,7 +311,7 @@ use Bar;
 
         if ($firstNamespaceLength === $secondNamespaceLength) {
             $sortResult = true === $this->configuration['case_sensitive']
-                ? strcmp($firstNamespace, $secondNamespace)
+                ? $firstNamespace <=> $secondNamespace
                 : strcasecmp($firstNamespace, $secondNamespace);
         } else {
             $sortResult = $firstNamespaceLength > $secondNamespaceLength ? 1 : -1;
@@ -569,8 +569,16 @@ use Bar;
                 $use['namespace']
             );
 
+            $numberOfInitialTokensToClear = 3; // clear `<?php use `
+            if (self::IMPORT_TYPE_CLASS !== $use['importType']) {
+                $prevIndex = $tokens->getPrevMeaningfulToken($index);
+                if ($tokens[$prevIndex]->equals(',')) {
+                    $numberOfInitialTokensToClear = 5; // clear `<?php use const ` or `<?php use function `
+                }
+            }
+
             $declarationTokens = Tokens::fromCode($code);
-            $declarationTokens->clearRange(0, 2); // clear `<?php use `
+            $declarationTokens->clearRange(0, $numberOfInitialTokensToClear - 1);
             $declarationTokens->clearAt(\count($declarationTokens) - 1); // clear `;`
             $declarationTokens->clearEmptyTokens();
 

@@ -20,8 +20,6 @@
         "hyperf/config": "~3.0",
         "hyperf/config-nacos": "~3.0",
         "hyperf/constants": "~3.0",
-        "hyperf/database": "~3.0",
-        "hyperf/db-connection": "~3.0",
         "hyperf/engine": "^2.10",
         "hyperf/filesystem": "^3.0",
         "hyperf/framework": "~3.0",
@@ -31,7 +29,6 @@
         "hyperf/http-server": "~3.0",
         "hyperf/logger": "~3.0",
         "hyperf/memory": "~3.0",
-        "hyperf/model-cache": "~3.0",
         "hyperf/paginator": "^3.0",
         "hyperf/process": "~3.0.0",
         "hyperf/redis": "~3.0.0",
@@ -39,7 +36,6 @@
         "hyperf/tracer": "~3.0.0",
         "hyperf/view": "~3.0",
         "hyperf/view-engine": "~3.0",
-        "hyperf/websocket-server": "^3.0",
         "symfony/var-dumper": "^6.4"
     },
     "require-dev": {
@@ -86,7 +82,7 @@
             "rm -rf runtime/container"
         ],
         "proto-build": [
-            "protoc --php_out=grpc/ protobuf/*.proto"
+            "protoc --proto_path=./protobuf/ --php_out=grpc/ protobuf/*.proto"
         ],
         "test": "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always",
         "cs-fix": "php-cs-fixer fix $1",
