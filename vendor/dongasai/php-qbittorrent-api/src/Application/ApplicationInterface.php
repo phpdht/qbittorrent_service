@@ -1,12 +1,12 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\Application;
+namespace Fatkulnurk\PHPQbittorrentApi\Application;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 
 /**
  * Interface ApplicationInterface
- * @package Fatkulnurk\PHPQbitttorrentApi\Application
+ * @package Fatkulnurk\PHPQbittorrentApi\Application
  */
 interface ApplicationInterface
 {

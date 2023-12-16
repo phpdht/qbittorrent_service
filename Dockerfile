@@ -14,7 +14,13 @@ RUN pecl install redis \
 
 
 # 安装swoole
-RUN pecl install swoole && docker-php-ext-enable swoole
+RUN pecl install --configureoptions='enable-sockets="yes"  \
+    enable-openssl="yes"  \
+    enable-http2="yes"  \
+    enable-swoole-json="yes" \
+     enable-swoole-curl="yes"  \
+    enable-cares="no"' swoole  \
+    && docker-php-ext-enable swoole
 
 # 安装gd
 RUN apt-get install -y wget unzip  libfreetype6-dev libmcrypt-dev libjpeg-dev libpng-dev \

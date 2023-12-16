@@ -2,18 +2,19 @@
 
 namespace Fatkulnurk\PHPQbittorrentApi;
 
-use Fatkulnurk\PHPQbittorrentApi\{
-    Authentication\Authentication,
+use Fatkulnurk\PHPQbittorrentApi\{Authentication\Authentication,
     Authentication\AuthenticationInterface,
     Application\Application,
     Application\ApplicationInterface,
     Log\Log,
     Log\LogInterface,
+    Rss\RSSInterface,
+    Search\SearchInterface,
     Sync\Sync,
     Sync\SyncInterface,
+    TorrentManagement\TorrentManagementInterface,
     TransferInfo\TransferInfo,
-    TransferInfo\TransferInfoInterface
-};
+    TransferInfo\TransferInfoInterface};
 
 class Qbittorrent implements QbittorrentInterface
 {
@@ -41,4 +42,20 @@ class Qbittorrent implements QbittorrentInterface
     {
         return (new TransferInfo());
     }
+
+    public function torrentManagement(): TorrentManagementInterface
+    {
+        // TODO: Implement torrentManagement() method.
+    }
+
+    public function search(): SearchInterface
+    {
+        // TODO: Implement search() method.
+    }
+
+    public function rss(): RSSInterface
+    {
+        // TODO: Implement rss() method.
+    }
+
 }

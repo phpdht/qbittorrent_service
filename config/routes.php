@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 use Hyperf\HttpServer\Router\Router;
 
-Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\Api\IndexController@index');
+Router::addRoute([ 'GET', 'POST', 'HEAD' ], '/', 'App\Controller\Api\IndexController@index');
 
 Router::get('/favicon.ico', function () {
     return '';
@@ -27,10 +27,11 @@ Router::addServer('ws', function () {
 });
 
 
-
-
 Router::addServer('grpc', function () {
-    Router::addGroup('/Grpc.PHPdhtQbittorrentService.Hello.Hi', function () {
-        Router::post('/SayHello', [\App\Controller\Grpc\HiController::class,'sayHello']);
+    Router::addGroup('/Grpc.PHPdhtQbittorrentService.Hello.Hello', function () {
+        Router::post('/sayHello', [ \App\Controller\Grpc\HiController::class, 'sayHello' ]);
+    });
+    Router::addGroup('/Grpc.PHPdhtQbittorrentService.Application.Application', function () {
+        Router::post('/version', [ \App\Controller\Grpc\ApplicationController::class, 'version' ]);
     });
 });

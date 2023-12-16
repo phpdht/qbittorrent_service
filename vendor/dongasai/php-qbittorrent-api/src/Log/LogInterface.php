@@ -1,12 +1,12 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\Log;
+namespace Fatkulnurk\PHPQbittorrentApi\Log;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 
 /**
  * Interface LogInterface
- * @package Fatkulnurk\PHPQbitttorrentApi\Log
+ * @package Fatkulnurk\PHPQbittorrentApi\Log
  */
 interface LogInterface
 {

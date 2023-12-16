@@ -1,12 +1,12 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\TransferInfo;
+namespace Fatkulnurk\PHPQbittorrentApi\TransferInfo;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 
 /**
  * Interface TransferInfoInterface
- * @package Fatkulnurk\PHPQbitttorrentApi\TransferInfo
+ * @package Fatkulnurk\PHPQbittorrentApi\TransferInfo
  */
 interface TransferInfoInterface
 {

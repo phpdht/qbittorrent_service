@@ -140,9 +140,7 @@ class Home
             'nav'   => 'index'
         ];
 
-        $list2 = Menu::menulist();
-//        dump($list2);
-        $list = array_merge($list, $list2);
+
 
 
         return $list;

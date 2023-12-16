@@ -20,13 +20,6 @@ class Singleton
     {
     }
 
-    private function __clone()
-    {
-    }
-
-    private function __wakeup()
-    {
-    }
 
     public function setBaseURI(string $uri): void
     {

@@ -15,15 +15,18 @@ class Authentication implements AuthenticationInterface
                 'POST',
                 '/api/v2/auth/login',
                 [
-                'form_params' => [
-                    'username' => $username,
-                    'password' => $password
-                ],
-                ]
+                    'form_params' => [
+                        'username' => $username,
+                        'password' => $password
+                    ],
+                    ]
             );
 
         return Collection::make($response);
     }
+
+
+
 
     public function logout(): CollectionInterface
     {

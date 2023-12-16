@@ -1,12 +1,12 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\Sync;
+namespace Fatkulnurk\PHPQbittorrentApi\Sync;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 
 /**
  * Interface SyncInterface
- * @package Fatkulnurk\PHPQbitttorrentApi\Sync
+ * @package Fatkulnurk\PHPQbittorrentApi\Sync
  */
 interface SyncInterface
 {

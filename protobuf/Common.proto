@@ -6,4 +6,6 @@ package Grpc.PHPdhtQbittorrentService.Common;
 // 默认参数
 message Parameters{
   int32 p1 = 1;
+  string p2 = 2;
+
 }
