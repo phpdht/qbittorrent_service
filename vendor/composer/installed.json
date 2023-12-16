@@ -481,6 +481,69 @@
             "install-path": "../dongasai/echarts-json"
         },
         {
+            "name": "dongasai/php-qbittorrent-api",
+            "version": "dev-dev",
+            "version_normalized": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dongasai/php-qbittorrent-api-client.git",
+                "reference": "dbf0d24e67d41012c4a62bf3e407b80e264af0d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dongasai/php-qbittorrent-api-client/zipball/dbf0d24e67d41012c4a62bf3e407b80e264af0d0",
+                "reference": "dbf0d24e67d41012c4a62bf3e407b80e264af0d0",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "time": "2023-12-16T12:21:57+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Fatkulnurk\\PHPQbittorrentApi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fatkul Nur Koirudin",
+                    "email": "fatkulnurk@gmail.com",
+                    "homepage": "http://fatkulnurk.github.io",
+                    "role": "Dreamer :)"
+                },
+                {
+                    "name": "dongasai",
+                    "homepage": "https://github.com/dongasai"
+                }
+            ],
+            "description": "Qbittorrent Web Ui Api for PHP Languages",
+            "keywords": [
+                "PHP Torrent Client",
+                "php torrent",
+                "qbittorrent",
+                "torrent api"
+            ],
+            "support": {
+                "source": "https://github.com/dongasai/php-qbittorrent-api-client/tree/dev"
+            },
+            "install-path": "../dongasai/php-qbittorrent-api"
+        },
+        {
             "name": "fig/http-message-util",
             "version": "1.1.5",
             "version_normalized": "1.1.5.0",

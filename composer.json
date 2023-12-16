@@ -12,6 +12,7 @@
         "php": ">=8.1",
         "dongasai/amis_php": "dev-master",
         "dongasai/echarts-json": "dev-master",
+        "dongasai/php-qbittorrent-api": "dev-dev",
         "hyperf/amqp": "~3.0",
         "hyperf/async-queue": "~3.0",
         "hyperf/cache": "~3.0",

@@ -132,6 +132,7 @@ return array(
     'GPBMetadata\\Google\\Api\\' => array($vendorDir . '/google/common-protos/metadata/Api'),
     'GPBMetadata\\' => array($baseDir . '/grpc/GPBMetadata'),
     'Fig\\Http\\Message\\' => array($vendorDir . '/fig/http-message-util/src'),
+    'Fatkulnurk\\PHPQbittorrentApi\\' => array($vendorDir . '/dongasai/php-qbittorrent-api/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'EchartsJson\\' => array($vendorDir . '/dongasai/echarts-json/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),

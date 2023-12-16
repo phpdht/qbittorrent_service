@@ -1,0 +1,48 @@
+{
+  "name": "dongasai/php-qbittorrent-api",
+  "description": "Qbittorrent Web Ui Api for PHP Languages",
+  "license": "MIT",
+  "keywords": [
+    "qbittorrent",
+    "php torrent",
+    "php torrent client",
+    "torrent api"
+  ],
+  "authors": [
+    {
+      "name": "Fatkul Nur Koirudin",
+      "email": "fatkulnurk@gmail.com",
+      "homepage": "http://fatkulnurk.github.io",
+      "role": "Dreamer :)"
+    },
+    {
+      "name": "dongasai",
+      "homepage": "https://github.com/dongasai"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fatkulnurk\\PHPQbittorrentApi\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fatkulnurk\\PHPQbittorrentApi\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "minimum-stability": "stable"
+}

@@ -206,6 +206,7 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'F' => 
         array (
             'Fig\\Http\\Message\\' => 17,
+            'Fatkulnurk\\PHPQbittorrentApi\\' => 29,
             'FastRoute\\' => 10,
         ),
         'E' => 
@@ -740,6 +741,10 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
         ),
+        'Fatkulnurk\\PHPQbittorrentApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src',
+        ),
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
@@ -948,7 +953,6 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'App\\Amis\\View' => __DIR__ . '/../..' . '/app/Amis/View.php',
         'App\\Constants\\ErrorCode' => __DIR__ . '/../..' . '/app/Constants/ErrorCode.php',
         'App\\Controller\\AbstractController' => __DIR__ . '/../..' . '/app/Controller/AbstractController.php',
-        'App\\Controller\\Admin\\AccController' => __DIR__ . '/../..' . '/app/Controller/Admin/AccController.php',
         'App\\Controller\\Admin\\AdminMenuController' => __DIR__ . '/../..' . '/app/Controller/Admin/AdminMenuController.php',
         'App\\Controller\\Admin\\AdminUserController' => __DIR__ . '/../..' . '/app/Controller/Admin/AdminUserController.php',
         'App\\Controller\\Admin\\Base' => __DIR__ . '/../..' . '/app/Controller/Admin/Base.php',
@@ -957,9 +961,6 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'App\\Controller\\Admin\\HomeController' => __DIR__ . '/../..' . '/app/Controller/Admin/HomeController.php',
         'App\\Controller\\Admin\\IndexController' => __DIR__ . '/../..' . '/app/Controller/Admin/IndexController.php',
         'App\\Controller\\Admin\\IndexController2' => __DIR__ . '/../..' . '/app/Controller/Admin/IndexController2.php',
-        'App\\Controller\\Admin\\RoomController' => __DIR__ . '/../..' . '/app/Controller/Admin/RoomController.php',
-        'App\\Controller\\Admin\\RoomUserController' => __DIR__ . '/../..' . '/app/Controller/Admin/RoomUserController.php',
-        'App\\Controller\\Admin\\UserController' => __DIR__ . '/../..' . '/app/Controller/Admin/UserController.php',
         'App\\Controller\\Api\\IndexController' => __DIR__ . '/../..' . '/app/Controller/Api/IndexController.php',
         'App\\Controller\\Grpc\\HiController' => __DIR__ . '/../..' . '/app/Controller/Grpc/HiController.php',
         'App\\Controller\\OpenApi\\IndexController' => __DIR__ . '/../..' . '/app/Controller/OpenApi/IndexController.php',
@@ -975,19 +976,9 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'App\\Logic\\Admin\\ServerInfo' => __DIR__ . '/../..' . '/app/Logic/Admin/ServerInfo.php',
         'App\\Logic\\File' => __DIR__ . '/../..' . '/app/Logic/File.php',
         'App\\Logic\\Sys' => __DIR__ . '/../..' . '/app/Logic/Sys.php',
-        'App\\Model\\Account' => __DIR__ . '/../..' . '/app/Model/Account.php',
         'App\\Model\\AdminMenu' => __DIR__ . '/../..' . '/app/Model/AdminMenu.php',
         'App\\Model\\AdminUser' => __DIR__ . '/../..' . '/app/Model/AdminUser.php',
         'App\\Model\\Model' => __DIR__ . '/../..' . '/app/Model/Model.php',
-        'App\\Model\\Room' => __DIR__ . '/../..' . '/app/Model/Room.php',
-        'App\\Model\\RoomApply' => __DIR__ . '/../..' . '/app/Model/RoomApply.php',
-        'App\\Model\\RoomUser' => __DIR__ . '/../..' . '/app/Model/RoomUser.php',
-        'App\\Model\\User' => __DIR__ . '/../..' . '/app/Model/User.php',
-        'App\\Model\\UserFriend' => __DIR__ . '/../..' . '/app/Model/UserFriend.php',
-        'App\\Model\\UserFriendApply' => __DIR__ . '/../..' . '/app/Model/UserFriendApply.php',
-        'App\\Model\\UserFriendGroup' => __DIR__ . '/../..' . '/app/Model/UserFriendGroup.php',
-        'App\\Model\\UserSession' => __DIR__ . '/../..' . '/app/Model/UserSession.php',
-        'App\\Model\\UserSessionGroup' => __DIR__ . '/../..' . '/app/Model/UserSessionGroup.php',
         'App\\Process\\AsyncQueueConsumer' => __DIR__ . '/../..' . '/app/Process/AsyncQueueConsumer.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
@@ -1753,6 +1744,16 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'FastRoute\\RouteCollector' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteCollector.php',
         'FastRoute\\RouteParser' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser.php',
         'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Authentication\\Authentication' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Authentication/Authentication.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Authentication\\AuthenticationInterface' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Authentication/AuthenticationInterface.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Collection' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Collection.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Qbittorrent' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Qbittorrent.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\RequestClient' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/RequestClient.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Rss\\RSS' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Rss/RSS.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Rss\\RSSInterface' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Rss/RSSInterface.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Search\\Search' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Search/Search.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Search\\SearchInterface' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Search/SearchInterface.php',
+        'Fatkulnurk\\PHPQbittorrentApi\\Singleton' => __DIR__ . '/..' . '/dongasai/php-qbittorrent-api/src/Singleton.php',
         'Fig\\Http\\Message\\RequestMethodInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/RequestMethodInterface.php',
         'Fig\\Http\\Message\\StatusCodeInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/StatusCodeInterface.php',
         'GPBMetadata\\Google\\Api\\Annotations' => __DIR__ . '/..' . '/google/common-protos/metadata/Api/Annotations.php',

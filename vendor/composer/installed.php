@@ -98,6 +98,15 @@
             ),
             'dev_requirement' => false,
         ),
+        'dongasai/php-qbittorrent-api' => array(
+            'pretty_version' => 'dev-dev',
+            'version' => 'dev-dev',
+            'reference' => 'dbf0d24e67d41012c4a62bf3e407b80e264af0d0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../dongasai/php-qbittorrent-api',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'fig/http-message-util' => array(
             'pretty_version' => '1.1.5',
             'version' => '1.1.5.0',
