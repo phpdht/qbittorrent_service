@@ -3,6 +3,7 @@
 namespace App\Controller\Grpc;
 
 
+use App\Logic\Qbittorrent;
 use Grpc\PHPdhtQbittorrentService\Application\VersionReply;
 use Grpc\PHPdhtQbittorrentService\Common\Parameters;
 
@@ -11,10 +12,12 @@ use Grpc\PHPdhtQbittorrentService\Common\Parameters;
  */
 class ApplicationController
 {
+
     public function version(Parameters $parameters)
     {
+        $qbt     = Qbittorrent::init();
         $message = new VersionReply();
-        $message->setVersion('version ; 1');
+        $message->setVersion($qbt->application()->getApplicationVersion()->getContents());
 
         return $message;
     }

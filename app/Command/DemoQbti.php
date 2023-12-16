@@ -27,10 +27,8 @@ class DemoQbti extends HyperfCommand
 
     public function handle()
     {
-        Singleton::getInstance()->setBaseURI('http://192.168.4.101:31743');
-        $qbt = new Qbittorrent();
-        $res = $qbt->authentication()->login('admin','admin888');
-        dump($res->getContents());
+        $qbt = \App\Logic\Qbittorrent::init();
+
         dump($qbt->application()->getApplicationVersion()->getContents());
         $this->line('Hello Hyperf!', 'info');
     }

@@ -188,6 +188,7 @@ return array(
     'App\\Logic\\Admin\\Menu' => $baseDir . '/app/Logic/Admin/Menu.php',
     'App\\Logic\\Admin\\ServerInfo' => $baseDir . '/app/Logic/Admin/ServerInfo.php',
     'App\\Logic\\File' => $baseDir . '/app/Logic/File.php',
+    'App\\Logic\\Qbittorrent' => $baseDir . '/app/Logic/Qbittorrent.php',
     'App\\Logic\\Sys' => $baseDir . '/app/Logic/Sys.php',
     'App\\Process\\AsyncQueueConsumer' => $baseDir . '/app/Process/AsyncQueueConsumer.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

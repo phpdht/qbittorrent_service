@@ -932,6 +932,7 @@ class ComposerStaticInitd3374540b8d65105da0de69ae1c0e73f
         'App\\Logic\\Admin\\Menu' => __DIR__ . '/../..' . '/app/Logic/Admin/Menu.php',
         'App\\Logic\\Admin\\ServerInfo' => __DIR__ . '/../..' . '/app/Logic/Admin/ServerInfo.php',
         'App\\Logic\\File' => __DIR__ . '/../..' . '/app/Logic/File.php',
+        'App\\Logic\\Qbittorrent' => __DIR__ . '/../..' . '/app/Logic/Qbittorrent.php',
         'App\\Logic\\Sys' => __DIR__ . '/../..' . '/app/Logic/Sys.php',
         'App\\Process\\AsyncQueueConsumer' => __DIR__ . '/../..' . '/app/Process/AsyncQueueConsumer.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
