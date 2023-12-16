@@ -6,10 +6,43 @@ import "Common.proto";
 
 service Application {
   rpc version (Common.Parameters) returns (VersionReply) {}
-
+  rpc webapiVersion (Common.Parameters) returns (VersionReply) {}
+  rpc buildInfo (Common.Parameters) returns (BuildInfoReply) {}
+  rpc shutdown (Common.Parameters) returns (Common.Reply) {}
+  rpc preferences (Common.Parameters) returns (PreferencesReply) {}
 }
 
 message VersionReply{
   string version = 1;
 }
 
+/**
+ * 打包消息
+ */
+message BuildInfoReply{
+  // qt version
+  string qt = 1;
+  // libtorrent version
+  string libtorrent = 2;
+  // Boost version
+  string boost = 3;
+  // OpenSSL version
+  string openssl = 4;
+  // Application bitness (e.g. 64-bit)
+  string bitness = 5;
+
+}
+
+/**
+ * 偏好设置,返回内容
+ */
+message PreferencesReply{
+  // Currently selected language (e.g. en_GB for English)
+  string locale = 1;
+  //True if a subfolder should be created when adding a torrent
+  bool create_subfolder_enabled = 2;
+  // start_paused_enabled
+  bool start_paused_enabled= 3;
+  //
+  int32 auto_delete_mode = 4;
+}
