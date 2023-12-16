@@ -1,4 +1,4 @@
-# qbittorrent - Grpc
+# qbittorrent_service
 
 > qbittorrent的grpc服务封装,
 

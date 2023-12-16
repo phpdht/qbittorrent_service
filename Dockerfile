@@ -29,6 +29,10 @@ RUN wget https://mirrors.aliyun.com/composer/composer.phar \
 
 # 开放 9501 Http端口
 EXPOSE 9501
+# 开放 9503 Grpc端口
+
+EXPOSE 9503
+
 WORKDIR /var/www/html
 
 

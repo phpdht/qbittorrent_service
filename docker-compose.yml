@@ -5,8 +5,8 @@ networks:
 services:
   hyperf3:
     build: .
-    image: cdd_atable:hyperf81
-    container_name: cdd_atable
+    image: phpdht:qbittorrent_service
+    container_name: qbittorrent_service
     privileged: false
     networks:
       - ggggg
@@ -17,5 +17,6 @@ services:
       - "bash"
     ports:
 #      http
-      - 35104:9501
+      - 35200:9501
+      - 35201:9503
 

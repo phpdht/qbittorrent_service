@@ -4,10 +4,10 @@ package Grpc.Hello;
 
 
 // 定义一个服务HelloYeah
-// 其中有个rpc方法叫做 SayHello
+
 // 同时我们可以看到传参为HelloRequest，HelloRequest属于消息
 // 返回消息为HelloReply
-service HelloYeah {
+service Hi {
   rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
 

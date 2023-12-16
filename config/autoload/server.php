@@ -29,7 +29,17 @@ return [
                 // Whether to enable request lifecycle event
                 'enable_request_lifecycle' => false,
             ],
-        ]
+        ],
+        [
+            'name' => 'grpc',
+            'type' => Server::SERVER_HTTP,
+            'host' => '0.0.0.0',
+            'port' => 9503,
+            'sock_type' => SWOOLE_SOCK_TCP,
+            'callbacks' => [
+                Event::ON_REQUEST => [\Hyperf\GrpcServer\Server::class, 'onRequest'],
+            ]
+        ],
     ],
     'settings' => [
         Constant::OPTION_ENABLE_COROUTINE => true,
