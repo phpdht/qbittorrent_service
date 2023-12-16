@@ -18,5 +18,6 @@ services:
     ports:
 #      http
       - 35200:9501
+#      grpc
       - 35201:9503
 

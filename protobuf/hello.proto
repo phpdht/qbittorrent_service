@@ -1,9 +1,9 @@
 syntax = "proto3";  // 标识，必须要有，表示是在使用proto3的协议
 
-package Grpc.Hello;
+package Grpc.PHPdhtQbittorrentService.Hello;
 
 
-// 定义一个服务HelloYeah
+// 定义一个服务 Hi.SayHello
 
 // 同时我们可以看到传参为HelloRequest，HelloRequest属于消息
 // 返回消息为HelloReply

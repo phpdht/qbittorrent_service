@@ -30,7 +30,7 @@ Router::addServer('ws', function () {
 
 
 Router::addServer('grpc', function () {
-    Router::addGroup('/grpc.hi', function () {
-        Router::post('/sayHello', 'App\Controller\Grpc\HiController@sayHello');
+    Router::addGroup('/Grpc.PHPdhtQbittorrentService.Hello.Hi', function () {
+        Router::post('/SayHello', [\App\Controller\Grpc\HiController::class,'sayHello']);
     });
 });

@@ -1,5 +1,5 @@
 {
-    "name": "cdd/im",
+    "name": "phpdht/qbittorrent_service",
     "type": "project",
     "keywords": [
         "php",
@@ -85,6 +85,9 @@
         "post-autoload-dump": [
             "rm -rf runtime/container"
         ],
+        "proto-build": [
+            "protoc --php_out=grpc/ protobuf/*.proto"
+        ],
         "test": "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always",
         "cs-fix": "php-cs-fixer fix $1",
         "analyse": "phpstan analyse --memory-limit 300M -l 0 -c phpstan.neon ./app ./config",
@@ -97,7 +100,7 @@
             "php ./bin/hyperf.php server:watch"
         ],
         "router_list": [
-            "php bin/hyperf.php describe:routes"
+            "php bin/hyperf.php describe:routes -S grpc"
         ]
     }
 }

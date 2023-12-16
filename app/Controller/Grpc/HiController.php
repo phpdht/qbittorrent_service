@@ -2,17 +2,18 @@
 
 namespace App\Controller\Grpc;
 
-use Grpc\HiReply;
-use Grpc\HiUser;
+
+use Grpc\PHPdhtQbittorrentService\Hello\HelloReply;
+use Grpc\PHPdhtQbittorrentService\Hello\HelloRequest;
 
 class HiController
 {
 
-    public function sayHello(HiUser $user)
+    public function sayHello(HelloRequest $user)
     {
-        $message = new HiReply();
-        $message->setMessage("Hello World" . time());
-        $message->setUser($user);
+        $message = new HelloReply();
+        $message->setMsg("Hi: {$user->getName()}, Hello World " . time());
+
         return $message;
     }
 
