@@ -1,0 +1,21 @@
+version: '3'
+networks:
+  ggggg:
+    external: true
+services:
+  hyperf3:
+    build: .
+    image: cdd_atable:hyperf81
+    container_name: cdd_atable
+    privileged: false
+    networks:
+      - ggggg
+    volumes:
+      - .:/var/www/html
+    tty: true
+    command:
+      - "bash"
+    ports:
+#      http
+      - 35104:9501
+

@@ -1,0 +1,5 @@
+.idea
+vendor
+.fleet
+composer.lock
+.phpunit.result.cache

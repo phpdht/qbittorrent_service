@@ -1,0 +1,16 @@
+{
+    "name": "dongasai/amis_php",
+    "description": "amis php",
+    "autoload": {
+        "psr-4": {
+            "AmisPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dongasai",
+            "email": "1514582970@qq.com"
+        }
+    ],
+    "require": {}
+}
